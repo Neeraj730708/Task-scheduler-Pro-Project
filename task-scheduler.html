@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Scheduler Pro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="header animate__animated animate__fadeIn">
+        <h1>Task Scheduler Pro</h1>
+        <p>Optimize your workflow with intelligent task scheduling</p>
+    </div>
+    
+    <div class="container">
+        <div class="card animate__animated animate__fadeInLeft">
+            <h2>Task Management</h2>
+            <div class="task-form">
+                <div class="input-group">
+                    <input type="text" id="taskName" placeholder="Enter task name" autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <input type="number" id="taskDuration" placeholder="Duration (hours)" min="1">
+                </div>
+                <button class="btn btn-primary" onclick="addTask()">Add Task</button>
+            </div>
+
+            <div class="task-list" id="taskList">
+                <h3>Current Tasks</h3>
+                <!-- Tasks will be added here dynamically -->
+            </div>
+
+            <div class="dependency-section">
+                <h3>Task Dependencies</h3>
+                <div class="dependency-controls">
+                    <div class="input-group">
+                        <select id="taskFrom"></select>
+                    </div>
+                    <div class="input-group">
+                        <select id="taskTo"></select>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="addDependency()">Add Dependency</button>
+            </div>
+        </div>
+
+        <div class="card animate__animated animate__fadeInRight">
+            <h2>Visualization & Schedule</h2>
+            <div id="taskGraph"></div>
+            <button class="btn btn-primary" onclick="calculateSchedule()" style="margin-top: 1rem; width: 100%;">
+                Generate Optimal Schedule
+            </button>
+            <div class="result-section" id="resultSection"></div>
+        </div>
+    </div>
+<script src="/javaScript.js"></script>
+</body>
+</html>
