@@ -5,9 +5,11 @@ Task Scheduler Pro is a web-based task management system that efficiently schedu
 Smart Task Scheduling: Uses Topological Sorting to manage task dependencies effectively.
 Interactive UI: Allows users to add, view, and organize tasks seamlessly.
 Real-Time Updates: Ensures dynamic scheduling for efficient workflow management.
+
 🛠 Technologies Used
 Data Structures & Algorithms (Topological Sort)
 HTML, CSS, JavaScript
+
 📌 How It Works
 Input Tasks & Dependencies – Users can add tasks along with their prerequisites.
 Scheduling Algorithm – The system applies Topological Sorting to determine execution order.
